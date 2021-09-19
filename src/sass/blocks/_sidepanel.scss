@@ -1,0 +1,52 @@
+.sidepanel {
+    position: fixed;
+    top: 30px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    &__link {
+        &_fb {
+            &:hover {
+                svg path {
+                    fill: rgb(12, 22, 211)
+                }
+            }
+        }
+        &_insta {
+            &:hover {
+                svg path {
+                    fill: rgb(158, 12, 211)
+                }
+            }
+        }
+        &_github {
+            &:hover {
+                svg path {
+                    fill: rgb(85, 12, 211)
+                }
+            }
+        }
+    }
+
+
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+    }
+    &__text {
+        height: 25px;
+        width: 150px;
+        span {
+            transform: rotate(-90deg) translate(-30%, 0%);
+            display: block;
+            width: 150px;
+        }
+        
+    }
+    
+
+}
